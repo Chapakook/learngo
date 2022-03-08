@@ -1,9 +1,9 @@
-### Learning Golang
+# Learning Golang
 
 -----
 Golang Beginner
 -----
-# go hompage
+### go hompage
 https://go.dev/doc/install
 
 check go version
@@ -15,7 +15,7 @@ $ which go
 /usr/local/go/bin/go
 
 -----
-# mac brew
+### mac brew
 ```
 brew install go
 
