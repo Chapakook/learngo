@@ -19,10 +19,10 @@ $ which go
 ```
 brew install go
 
-go version
+$ go version
 go version go1.17.8 darwin/arm64
 
-which go 
+$ which go 
 /opt/homebrew/bin/go
 ```
 
