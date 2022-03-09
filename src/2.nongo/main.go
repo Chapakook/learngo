@@ -21,13 +21,14 @@ func main() {
 
 	// range arr -> [] [] ... result = index,value
 	for _, work := range works {
-		startWork(work)
+		result := startWork(work)
+		fmt.Println(result)
 	}
 }
 
-func startWork(work string) {
+func startWork(work string) string {
 	fmt.Println(work, "Start!!")
 	// Work Something ...
 	time.Sleep(time.Second * 5)
-	fmt.Println(work, "Done!!")
+	return work + " Done!!"
 }
