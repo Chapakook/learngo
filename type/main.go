@@ -10,6 +10,7 @@ map[type]type
 var
 */
 
+//struct
 type myStruct struct {
 	myInt int
 	myStr string
@@ -23,10 +24,13 @@ var myvar = ""
 var (
 	myVarInt = 0
 	myVarStr = "string"
-	myVarMap = make(map[string]string)
 )
 
 func main() {
+	// map new two way
+	// myVarMap := map[string]string{}
+	myVarMap := make(map[string]string)
+
 	myVarMap["first"] = "first item"
 
 	mystruct := myStruct{
@@ -35,8 +39,8 @@ func main() {
 		myMap: myVarMap,
 	}
 
-	fmt.Println(mystruct)
-	fmt.Println(mystruct.myInt)
-	fmt.Println(mystruct.myStr)
-	fmt.Println(mystruct.myMap)
+	fmt.Println("Struct : ", mystruct)
+	fmt.Println("Int : ", mystruct.myInt)
+	fmt.Println("String : ", mystruct.myStr)
+	fmt.Println("Map : ", mystruct.myMap)
 }
